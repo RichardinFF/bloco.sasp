@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela Inicial -->
+        <div id="mainScreen" class="screen">
+            <div id="notesList" class="notes-container">
+                <ul id="notes"></ul>
+            </div>
+            <!-- Botão Adicionar Nota (Ícone de Mais) -->
+            <button id="addNoteBtn" class="btn add-note-btn">+</button>
+        </div>
+
+        <!-- Tela de Edição de Nota -->
+        <div id="editScreen" class="screen" style="display: none;">
+            <div id="editNoteArea" class="edit-note-area" contenteditable="true" placeholder="Escreva sua nota..."></div>
+            <button id="goBackBtn" class="btn go-back-btn">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
